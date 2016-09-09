@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="styles/semantic.min.css" />
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link rel="icon" type="image/png" href="images/sitelogo.png">
-    <title>Dubbing show</title>
+    <title>Dubbing shoW</title>
+
 
     <script src="/scripts/jquery.js"></script>
 
