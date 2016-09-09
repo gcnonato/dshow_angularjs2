@@ -1,0 +1,16 @@
+<div class="col-md-4 col-md-pull-8" style="padding:0">
+    <div class="ui blue inverted segment">
+        Ən çox baxılanlar
+    </div>
+    <div class="panel panel-default" *ngFor="let el of gs.five">
+        <div class="panel-heading"><a href="" [routerLink]="['Watch',{id:el.id}]">{{el.title}}</a></div>
+        <div class="panel-body">
+            <a href="" [routerLink]="['Watch',{id: el.id }]">
+                <img src="{{el.thumbnail_120_url}}" alt="{{el.title}}"  />
+            </a>
+        </div>
+        <div class="panel-footer">
+            Baxılıb: {{el.views_total}} dəfə
+        </div>
+    </div>
+</div>

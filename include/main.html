@@ -1,0 +1,37 @@
+<div class="col-md-8 col-md-push-4 temm">
+                    
+    <div *ngFor="let row of gs.list" style="margin-bottom:10px;padding:0">  
+        <div class="ui red inverted segment">
+                    <a href="" [routerLink]="['Watch',{id:row.id}]" style="color: #fff">{{row.title}}</a>
+        </div>
+
+        <div class="ui segment">
+            <div class="row">
+            <div class="col-sm-6">
+                <a href="" [routerLink]="['Watch',{id:row.id}]"><img src={{row.thumbnail_120_url}} /></a>
+            </div>
+
+            <div class="col-sm-6" style="margin: 5px 0">
+                {{row.description}}
+            </div>
+            </div>
+        </div>
+
+        <div class="ui inverted segment right aligned">
+                Baxış sayı: {{row.views_total}}
+        </div>
+    </div>
+    <h1 *ngIf='gs.empty'>Axtarilan video yoxdur</h1>    
+    <nav *ngIf="ax">
+        <ul class="pagination">
+        <li *ngFor="let row of gs.total"><a href="" [routerLink]="['Page',{seh:row}]">{{row}}</a></li>
+        </ul>
+    </nav>
+    <nav *ngIf="!ax">
+        <ul class="pagination">
+        <li *ngFor="let row of gs.total"><a href="" [routerLink]="['SearchPlus',{key:keyy,sehi:row}]">{{row}}</a></li>
+        </ul>
+    </nav>
+
+</div>
+<last-com></last-com>

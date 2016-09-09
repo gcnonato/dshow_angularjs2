@@ -1,0 +1,38 @@
+<div class="col-md-8 col-md-push-4 temm">
+
+    <div class="ui red inverted segment">
+                {{gs.video.title}}
+    </div>
+
+    <div class="ui raised segment">
+        <div class="embed-responsive embed-responsive-16by9">
+
+            <div id="videoplayer">
+                <iframe
+                    id="vplayer"
+                    width="WIDTH"
+                    height="HEIGHT"
+                    src="{{gs.video.embed_url}}?related=0&html=true"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+            <div class="text-right col-xs-12">Baxılıb: {{gs.video.views_total}} dəfə</div>
+    </div>
+
+    <div class="ui inverted segment">
+        Video Haqda
+
+    </div>
+
+    <div class="ui segment" [innerHTML]='gs.video.description'></div>
+
+</div>
+
+<last-com></last-com>
