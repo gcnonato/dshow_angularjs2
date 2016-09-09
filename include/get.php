@@ -8,9 +8,8 @@
     else
     $url = "http://" .$_SERVER['SERVER_NAME']. "/include/getdatas.php?" .implode("&",$lists);
     echo $url;
-    print_r($_SERVER);
     
-    //echo file_get_contents($url);
+    echo file_get_contents($url);
 
 
 ?>
