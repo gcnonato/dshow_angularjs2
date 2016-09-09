@@ -7,7 +7,7 @@
     $url ='http://dshow.herokuapp.com/include/getdatas.php?'.implode("&",$lists);
     else
     $url = "http://" .$_SERVER['SERVER_NAME']. "/include/getdatas.php?" .implode("&",$lists);
-    echo $url;
+    //echo $url;
     
     echo file_get_contents($url);
 
