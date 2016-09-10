@@ -11,8 +11,8 @@
                 <a href="" [routerLink]="['Watch',{id:row.id}]"><img src={{row.thumbnail_120_url}} /></a>
             </div>
 
-            <div class="col-sm-6" style="margin: 5px 0">
-                {{row.description}}
+            <div class="col-sm-6" style="margin: 5px 0" [innerHTML]="row.description">
+                
             </div>
             </div>
         </div>
