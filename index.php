@@ -61,6 +61,14 @@
     </style>
 </head>
     
-    <main-app></main-app>
+    <main-app>
+        <div style="left: 0; top: 0;position: fixed;width: 100%;height: 100%; background-color: rgba(0,0,0,0.7); z-index: 20;color: #fff;" id="dimmer" >
+            <div style="display: flex; align-items: center; width: 100%; height: 100%; text-align: center;" >
+                <div style="width: 100%">
+                    <span style="font-size: 25px;">Loading</span>
+                </div>
+            </div>
+        </div>
+    </main-app>
 
 </html>
